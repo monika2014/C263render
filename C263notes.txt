@@ -1,0 +1,125 @@
+// For this class install GIT
+
+For WINDOWS installing Git:
+1. Click on Windows to download git for windows OS.
+
+After installing git you can continue following the steps for MAC and
+WINDOWS users for uploading files on GitHub.
+
+23.Let’s upload our web app on GitHub. To do that, open the terminal and go to the
+class_262 folder in the terminal.
+Use the following command to direct your terminal to class_262 folder
+cd Documents/cloud/class_262/
+
+24.Now, use the ‘ls’ command to see how many files are there in the class_262 folder.
+
+25.It is time to initialize git in the class_262 folder. This will initialise git in the project
+folder to upload folder files on GitHub.
+git init
+
+26.Now, let’s add class_262 folder files in GitHub. By using the following command,
+git add.
+
+27.Now, use the commit command to commit our first uploading files to GitHub.
+git commit -m “first commit”
+
+28.Now, to get the next command open a GitHub account in the browser. And copy the
+6th command.
+
+29.Put the above copied URL and the below command.
+git remote add origin <URL>
+
+
+
+
+
+
+In the previous class 262, we learned
+& revised the concepts of PAAS, why
+we used PAAS. Learned how to
+handle API and create a web app out
+of it using Flask.
+We created a web app
+that gives us real-time weather stats
+report.
+
+What is the full form of API?
+The API is nothing but an
+Application Programming
+Interface.
+
+Why did we use a route
+decorator in a flask?
+We used a route decorator for
+directing to a specific webpage to run
+a function.
+
+In this class, we will be understanding
+the concepts of deployment and we
+are going to deploy the same weather
+web app.
+
+What do you mean by FLASK?
+Flask is nothing but a small/micro web framework used to create small web apps. This
+framework is used for web development and API handling of websites.
+
+Why do we use Flask?
+
+Flask is a microframework; it means it does not contain complex settings or file
+structures. This makes Flask a user-friendly framework for web development.
+Companies like Google, Twitter, and Facebook work heavily on the flask.
+
+What is API?
+The API is an Application Programming Interface that helps web applications interact
+with databases.
+
+What is a database?
+A database is a place where data is stored
+
+
+As you remember in the last class, we have created a folder named class_262. And in that
+folder, we have stored all the required files in order to run our web app.
+But as you noticed in the last class we have run our web app locally.
+But in this class, our goal is to deploy the app on the cloud so anyone can see our
+web app.
+For this, we need 2 additional files which are Procfile and requirements.txt and we have to
+move them inside the class_262 folder
+
+Procfile - This file is used to deploy web apps on Render, later in the class we will see
+about Render.
+In this file, we mention which file should run when a web app is deployed on Render.
+This file tells Render which file to execute in order to run the app on the Render platform.
+
+
+Here:
+The web defines a web application.
+The gunicorn is a small Python server which is required to deploy apps on Render.
+The app is nothing but our Python file name where all our Python code is stored. If we had
+some other file name then that name would be here.
+
+requirements.txt - As the name suggests in this file, we mention the libraries which will be
+used for the deployment of the web app. So, if you want to use a new library then you need
+to mention it in this file.
+
+For example, for running our Python code: first, we create an environment and then install
+libraries in it such as flask and then run our code.
+
+Similarly, when we wish to deploy the web app on the cloud we need to mention all the used
+libraries in the requirements.txt file.
+
+So, when you deploy the web app, the cloud platform will look into this requirements.txt file
+and install all the mentioned libraries as per the versions of each library.
+
+Here, you can see we are using click, Flask, gunicorn, itsdangerous, Jinja2, MarkupSafe
+and Werkzeug libraries.
+
+In our project, we are using the above libraries. So, you can say that the requirements.txt
+file holds the libraries name and its version required to run the program.
+
+
+So, what do you mean by deployment?
+Well, deployment is nothing but uploading a project on a server that will run our project over
+the internet. This means once you deploy anything on a server you don’t need to think about
+anything deployment platform can take care to run your project.
+We have multiple deployment platforms such as GitHub, Render, etc.
+
